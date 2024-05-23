@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Lato", system-ui, sans-serif;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.hero {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 29, 27, 0.8),
+      rgba(78, 20, 19, 0.8)
+    ),
+    url("../img/headerimg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hotel__amenities-item {
+  @apply items-center flex px-2 py-2 shadow-xl w-11/12 h-full rounded-md hover:-translate-y-1 transition-all duration-200 gap-4;
+}
+.nav-item {
+  @apply uppercase text-sm block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:p-0 md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 border-b-2 border-transparent hover:border-b-2 hover:border-mainColor  transition-all duration-200;
+}
+.gallery-item {
+  @apply h-full md:h-96 max-w-full px-4 md:p-0 object-cover mx-auto hover:scale-110 transition-all duration-200;
+}
+
+.form-field {
+  @apply appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-mainColor sm:text-sm sm:leading-6 focus:bg-white opacity-100;
+}
+
+.tg td {
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  font-family: Arial, sans-serif;
+
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-fymr {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-rmlg {
+  color: #212529;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-0pky {
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-mcqj {
+  text-align: left;
+  font-weight: 700;
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html class="scroll-smooth " lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Velissarios Hotel</title>
+  </head>
+  <body class="bg-bgcolorgray">
+
+    <!-- NANIGATION  -->
+
+
+    <nav class="bg-white bg-opacity-80 hover:bg-opacity-100 border-gray-200 dark:bg-gray-900 px-5 fixed w-full z-10 top-0 left-0 transition-bg-opacity duration-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  p-4"
+      >
+        <a href="#" class="flex items-center">
+          <span
+            class="self-center text-sm md:text-2xl font-semibold whitespace-nowrap dark:text-white text-mainColor font-veli md:hover:scale-105 transition-all duration-200"
+            >Velissarios Hotel</span
+          >
+        </a>
+
+        <div class="text-center justify-self-center md:order-2 ml-auto mr-2">
+          <button class="text-mainColor hover:text-white  font-semibold bg-transparent hover:bg-mainColor border-4 border-mainColor focus:ring-4 focus:ring-MainColorDark rounded-lg text-xs md:text-sm px-5 py-2.5  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none  dark:focus:ring-blue-800 transition-all duration-200" type="button" 
+          id="drawer-backdrop" class="!z-0"
+          data-drawer-backdrop="true"
+          data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+            
+          Contact us
+          </button>
+        </div>
+        
+        <!-- drawer component -->
+        <div id="drawer-contact" class="fixed top-0 left-0 z-10 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
+          <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Contact us</h5>
+        
+          <form action="#" class="mb-6">
+             <div class="mb-6">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
+             </div>
+             <div class="mb-6">
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
+             </div>
+             <div class="mb-6">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300  focus:ring-mainColor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+             </div>
+             <button type="submit" class="text-white bg-mainColor hover:bg-MainColorDark w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block transition-all duration-200">Send message</button>
+          </form>
+          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+             <a href="mailto:info@velissarioshotel.gr" class="hover:underline">info@velissarioshotel.gr</a>
+          </p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+             <a href="tel:+302897023811" class="hover:underline">+30 28970 23811</a>
+          </p>
+        </div>
+        
+        <div class="flex md:order-3">
+
+          <!-- CONTACT US Button Drawer-->
+
+
+
+
+<!-- BOOK NOW BUTTON -->
+
+         <a href="#reservation"> <button
+            type="button"
+            class="focus:outline-none text-white bg-mainColor hover:bg-MainColorDark focus:ring-4 border-4 border-mainColor focus:ring-red-800 font-semibold rounded-lg text-xs md:text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg hidden lg:block"
+          >
+            Book now
+          </button></a>
+
+
+          <!-- HAMBURGER MENU BUTTON -->
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-mainColor dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- MAIN MENU -->
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-auto"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-item"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#hotel"
+                class="nav-item"
+                >The Hotel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#rooms"
+                class="nav-item"
+                >Accomodation</a
+              >
+            </li>
+            <li>
+              <a
+                href="#location"
+                class="nav-item"
+                >Location</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reservation"
+                class="nav-item"
+                >reservation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+      <!-- HERO SECTION -->
+
+
+      <section class="hero h-[80vh] pt-48" >
+        <div
+          class="max-w-screen-sm flex flex-col items-center justify-center mx-auto h-96 bg-white bg-opacity-60 lg:max-w-screen-lg space-y-10 px-4"
+        >
+          <h1
+            class="font-veli text-black font-bold text-3xl md:text-6xl opacity-100 text-center"
+          >
+            Hotel Velissarios
+          </h1>
+          <span class="italic text-2xl">A trip to simplicity</span>
+          <a href="#hotel"
+            ><button
+              type="button"
+              class="focus:outline-none text-white opacity-100 bg-mainColor hover:bg-MainColorDark focus:ring-4 focus:ring-red-800 font-medium rounded-lg text-xl md:text-3xl mt-8 px-5 py-5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg"
+            >
+              Explore the Hotel
+            </button></a
+          >
+        </div>
+      </section>
+
+      <!--  THE HOTEL SECTION  -->
+
+      <section class="hotel max-w-screen-xl mx-auto pb-28" id="hotel">
+        <h2
+          class="uppercase tracking-widest  text-5xl lg:text-8xl text-center font-bold text-mainColor my-28"
+        >
+          The Hotel
+        </h2>
+        <div class="hotel__info gap-5 grid lg:grid-cols-[1fr,1fr,2fr] lg:gap-7 group">
+          <img
+            class=" w-11/12 h-64 lg:group-hover:-translate-y-1 transition-all duration-500 object-cover shadow-lg lg:w-full lg:h-full"
+            src="./img/hotelrec.jpg"
+            alt="Velissarios Reception"
+          />
+          <img
+            class="w-11/12 h-64 lg:group-hover:translate-y-1 transition-all duration-500 object-cover shadow-lg lg:block lg:w-full lg:h-full"
+            src="./img/hotelview.jpg"
+            alt="Velissariosview"
+          />
+          <div class="hotel__description w-full px-6 lg:p-1">
+            <h3 class="text-3xl">Welcome to Hotel Velissarios Hersonissos</h3>
+            <hr
+              class="h-1 bg-mainColor w-2/12 my-9 group-hover:w-1/2 transition-all duration-500"
+            />
+            <p class="text-lg">
+              Velissarios Hotel is a charming hotel with a comfortable
+              atmosphere located in the heart of the city just 100m from the
+              sandy beach of Hersonissos. It is within a 5 minute walk from the
+              coastal downtown and entertainment centers.</br></br> Heraklion city is
+              situated 25km away, Heraklion Port is 27 km away and international
+              airport Nikos Kazantzakis lies 19 km away. </br></br>The members of the
+              staff are pleasant and willing to serve you in order to enjoy your
+              stay here. . Its privileged location in the commercial, and business
+              center of the city makes it the ideal choice for quality vacations
+              and an excellent base for unforgettable excursions.
+            </p>
+            <a href="#rooms"><button type="button" class="text-white bg-mainColor hover:bg-MainColorDark focus:ring-4 focus:outline-none focus:ring-red-800 font-medium rounded-lg text-xl my-6 px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Check the rooms
+              <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </a>
+          </div>
+        </div>
+
+        <!-- EXTRA HOTEL AMENITIES -->
+
+        <h2
+        class="uppercase tracking-widest text-4xl text-center font-bold text-mainColor my-24"
+      >
+       Hotel Amenities
+      </h2>
+      <div class="hotel__amenities grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl gap-x-2 gap-y-5 justify-items-center">
+
+        
+<div class="hotel__amenities-item">
+  <ion-icon name="wifi-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Free WiFi</h4>
+    <p class="leading-5">Free fast WiFi connection in all common areas and rooms.</p>
+  </div>
+</div>
+
+
+<div class="hotel__amenities-item">
+  <ion-icon name="shirt-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Laundry Service</h4>
+    <p class="leading-5">Get your clothes clean, fast and affordably</p>
+  </div>
+</div>
+
+<div class="hotel__amenities-item">
+  <ion-icon name="key-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Always Available</h4>
+    <p class="leading-5">18-hour reception service, by former NBA Player V. Span.</p>
+  </div>
+</div>
+
+<div class="hotel__amenities-item">
+  <ion-icon name="tv-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Satellite TV</h4>
+    <p class="leading-5">32" LCD Flat TV in every room with Satellite connection.</p>
+  </div>
+</div>
+
+<div class="hotel__amenities-item">
+  <ion-icon name="lock-closed-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Safe Boxes</h4>
+    <p class="leading-5">Safe boxes are available in reception area.</p>
+  </div>
+</div>
+
+<div class="hotel__amenities-item">
+  <ion-icon name="beer-outline" class="w-16 h-12 py-3 px-4 bg-mainColor text-white rounded-md"></ion-icon>
+  <div class="">
+    <h4 class="font-bold text-lg">Hotel bar</h4>
+    <p class="leading-5">Hotel bar
+      Hotel bar in the reception area, with billiards.</p>
+  </div>
+</div>
+
+      </div>
+      </section>
+
+      <!-- ROOMS Section -->
+
+
+      <section class="rooms bg-gradient-to-br from-mainColorLight to-MainColorDark pb-32" id="rooms">
+        <div class="rooms__wrapper max-w-screen-xl mx-auto ">
+
+        <h2
+          class="uppercase tracking-widest text-5xl lg:text-8xl text-center font-bold text-bgcolorgray py-28 px-3"
+        >
+          Rooms
+        </h2>
+
+        <!-- Rooms Showcase -->
+
+        <div class="max-w-screen-xl mx-auto bg-white bg-opacity-20 p-10 rounded-lg">
+
+          <!-- Gallery -->
+
+  <div class="rooms_gallery grid grid-cols-1 md:grid-cols-3 gap-x-3 md:gap-x-2 gap-y-3 lg:gap-y-0 items-center justify-center mb-4 rounded-lg" >
+    <div class="overflow-hidden">
+        <img class="gallery-item " src="img/rooms1.jpg" alt="Velissarios rooms image ">
+    </div>
+    <div class=" overflow-hidden hidden md:inline-block">
+        <img class="gallery-item " src="img/rooms2.jpg" alt="Velissarios rooms image ">
+    </div>
+    <div class="overflow-hidden">
+        <img class="gallery-item " src="img/rooms3.jpg" alt="Velissarios rooms image ">
+    </div>
+
+    </div>
+
+    <!-- Rooms Info -->
+
+    <div class=" w-full flex flex-col gap-2 sm:flex-row flex-wrap justify-between border-2 border-white p-6">
+      <div class="flex items-center gap-x-2 pl-20 sm:p-0">
+        <ion-icon name="people-outline" class="text-white h-8 w-8"></ion-icon>
+        <span class="text-white">2/3 Persons</span>
+      </div>
+      <div class="flex items-center gap-x-2 pl-20 sm:p-0">
+        <ion-icon name="thermometer-outline"  class="text-white h-8 w-8"></ion-icon>
+        <span class="text-white">Air-conditioned</span>
+      </div>
+
+      <div class="flex items-center gap-x-2 pl-20 sm:p-0">
+        <ion-icon name="expand-outline"  class="text-white h-8 w-8"></ion-icon>
+        <span class="text-white">25m²</span>
+      </div>
+     <a href="#reservation"><button
+      type="button"
+      class="focus:outline-none text-white bg-mainColor hover:bg-MainColorDark focus:ring-4 focus:ring-red-800 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mt-4 sm:mt-0 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg flex-1 sm:flex-none lg:block"
+    >
+      Book now
+    </button>
+    </div></a> 
+
+    <div class="flex flex-col md:flex-row">
+<div class="flex-1 pl-4 pr-10">
+  <h4 class="uppecase text-4xl font-bold text-txtcolorgray py-5">Room description</h4>
+  <p class="text-txtcolorgray text-lg leading-6">Our rooms of 25 square meters can accomodate 2-3 persons. You can pick between two single beds, or a double bed, with the capability of adding an extra bed, or a baby cot after prior arrangement.
+  </br></br>
+    All our rooms have balconies, with street, or mountain view, and all floors can be accessed through the main stairs or the elevator.
+  </br></br>
+    Hotel Velissarios's rooms, are equipped with flat LCD TVs, Air-Condition, hair dryer and a mini fridge.</p>
+</div>
+<div class=": flex-1 md:flex-initial md:w-1/3  pl-10">
+  <h4 class="uppecase text-4xl font-bold text-txtcolorgray py-5" >Room Facitilies</h4>
+
+  <!-- Facilities list -->
+
+
+  <div class="flex flex-col gap-3">
+  <div class="flex items-center gap-6">
+    <ion-icon name="tv-outline" class="h-8 w-8 text-colorSecondary"></ion-icon>
+    <span class="text-txtcolorgray text-lg">32" HD TV</span>
+
+  </div>
+
+  <div class="flex items-center gap-6">
+    <ion-icon name="WiFi-outline" class="h-8 w-8 text-colorSecondary"></ion-icon>
+    <span class="text-txtcolorgray text-lg">Free and Fast WiFi</span>
+
+  </div>
+
+  <div class="flex items-center gap-6">
+    <ion-icon name="sunny-outline" class="h-8 w-8 text-colorSecondary"></ion-icon>
+    <span class="text-txtcolorgray text-lg">Street/mountain view balcony</span>
+
+  </div>
+
+  <div class="flex items-center gap-6">
+    <ion-icon name="thermometer-outline" class="h-8 w-8 text-colorSecondary"></ion-icon>
+    <span class="text-txtcolorgray text-lg">Mini Fridge</span>
+
+  </div>
+
+  <div class="flex items-center gap-6">
+    <ion-icon name="snow-outline" class="h-8 w-8 text-colorSecondary"></ion-icon>
+    <span class="text-txtcolorgray text-lg">Air-Condition</span>
+
+  </div>
+</div>
+</div>
+
+
+    </div>
+
+  </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+
+        <section class="section-location relative bg-transparent" id="location">
+          <div class="section-location__bg-video absolute top-0 left-0 h-full w-full -z-10  opacity-30">
+            <video class="section-location__bg-video-content h-full w-full object-cover" autoplay muted >
+              <source src="img/beach.mp4" type="video/mp4">
+              Your Browser is not supported!
+            </video>
+          </div>
+          <div class="wrapper bg-white bg-opacity-20">
+          <div class="container max-w-screen-xl mx-auto px-1  ">
+          
+        <div class=" mx-auto  px-4 lg:px-16 bg-white bg-opacity-30 rounded-md shadow-lg hover:bg-opacity-70 transition-all duration-400">
+          <h2
+              class="uppercase tracking-widest text-5xl lg:text-8xl text-center font-bold text-mainColor pt-10 pb-28"
+            >
+              Location
+            </h2>
+          <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] justify-items-center items-start">
+          <div class="section-location__main-textbox p-2 text-center md:text-start">
+            <h4 class="text-4xl pb-4">Hersonissos, Crete</h4>
+            <p class="text-lg">Hersonissos is considered the most developed tourist destination of Crete, due to the high range of quality services and attractions provided and is able to fulfill all the expectations.
+            </br></br>
+              Hersonissos can be divided in old and new Hersonissos. In old Hersonissos, land inward, you will find the ancient Greek culture, at the harbour you will find new Hersonissos. </br></br>Near Hersonissos there are three small villages, Piskopiano and Koutouloufari and Old Hersonissos which are overlooking the busy resort of Hersonissos. </br>The harbour of Hersonissos is famous for its night life and is mostly occupied by younger tourists who want to have fun at the beach and enjoy the nightlife, while the neighbouring villages offer quiet and peaceful environment for family vacation.
+            </br></br>
+              Hersonissos has one of the most beautiful beaches of Crete. However, in the high season the beach is a bit to small for everybody. But you will find a lot of places on the boulevard, and many beaches nearby, to enjoy the sun! Don’t forget you sunblock and party-face!</p>
+          </div>
+          <div class="section-location__main-distance p-2">
+            <h4 class="text-4xl pb-4"> Distances from hotel </h4>
+          <div class="section-location__main-distances text-lg">
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-mcqj">Place</th>
+                <th class="tg-fymr">Distance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-rmlg">Heraklion</td>
+                <td class="tg-0pky">30km</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Beach</td>
+                <td class="tg-0pky">100m</td>
+              </tr>
+              <tr>
+                <td class="tg-rmlg">Bus stop Heraklion/Agios Nikolaos</td>
+                <td class="tg-0pky">70m</td>
+              </tr>
+              <tr>
+                <td class="tg-rmlg">Star Beach Water Park</td>
+                <td class="tg-0pky">500m</td>
+              </tr>
+              <tr>
+                <td class="tg-rmlg">Bar street</td>
+                <td class="tg-0pky">500m</td>
+              </tr>
+              <tr>
+                <td class="tg-rmlg">Aquarium Aquaworld</td>
+                <td class="tg-0pky">900m</td>
+              </tr>
+            </tbody>
+            </table></div>
+            
+          </div>
+          </div>
+          <div class="relative w-full h-96 "><iframe class="absolute top-0 left-0 w-full h-full py-2 md:py-8" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813.93707642692!2d25.397391!3d35.312235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a64343dce1351%3A0x1066c0f81b8767bd!2sHotel%20Velissarios!5e0!3m2!1sel!2sus!4v1681911104208!5m2!1sel!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+      </div>
+
+    
+        </section>
+
+        <section class="reservation-form my-24" id="reservation">
+          <div class="max-w-screen-xl mx-auto px-8">
+
+            <h2
+            class="uppercase tracking-widest  text-4xl lg:text-8xl text-center font-bold text-mainColor pt-10 pb-24"
+          >
+            Reservation
+          </h2> 
+            <form>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    First Name
+                  </label>
+                  <input class="form-field" id="grid-first-name" type="text" placeholder="Jane">
+                 
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                    Last Name
+                  </label>
+                  <input class="form-field" id="grid-last-name" type="text" placeholder="Doe">
+                </div>
+              </div>
+
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-date-arrival">
+                    Date of arrival
+                  </label>
+                  <input class="form-field" id="grid-date-arrival" type="date">
+                 
+                </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-date-departure">
+                    Date of departure
+                  </label>
+                  <input class="form-field" id="grid-date-departure" type="date">
+                 
+                </div>
+              </div>
+
+              <p class="roomselection mt-10">Please select your room</p>
+              <div class="flex flex-wrap mt-5 -mx-3 mb-2">
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="guests">
+                    Number of Guests
+                  </label>
+                  <select class="form-field" id="persons">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                    bed arrangement
+                  </label>
+                  <div class="relative">
+                    <select class="form-field" id="bed-arrangement">
+                      <option>Double bed</option>
+                      <option>2 Single beds</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                    View
+                  </label>
+                  <select class="form-field" id="bed-arrangement">
+                    <option>Street View</option>
+                    <option>Mountain View</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="button" class="text-white text-lg bg-mainColor hover:bg-MainColorDark focus:ring-4 focus:outline-none focus:ring-MainColorDark font-medium rounded-lg  px-9 py-6 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4">
+               Ask for availability
+                <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            </form>
+              </div>
+        </section>
+
+   
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center mb-4 sm:mb-0">
+            <span
+            class="self-center text-sm md:text-2xl font-semibold whitespace-nowrap dark:text-white text-mainColor font-veli md:hover:scale-105 transition-all duration-200"
+            >Velissarios Hotel</span
+            
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#hotel" class="mr-4 hover:underline md:mr-6 ">The Hotel</a>
+              </li>
+              <li>
+                  <a href="#rooms" class="mr-4 hover:underline md:mr-6">Accomodation</a>
+              </li>
+              <li>
+                  <a href="#location" class="mr-4 hover:underline md:mr-6 ">Location</a>
+              </li>
+              <li>
+                  <a href="#reservation" class="hover:underline">Reservation</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Velissarios Hotel</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/flowbite.min.js"></script>
+  </body>
+</html>
